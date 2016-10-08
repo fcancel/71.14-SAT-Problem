@@ -1,0 +1,4 @@
+data;
+
+set BINARIAS := a b c d e f g h i j;
+set CONDICIONES := condicion1;
