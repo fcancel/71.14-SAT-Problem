@@ -7,7 +7,7 @@ set CONDICIONES := condicion1 condicion2 condicion3 condicion4 condicion5 condic
 param TABLA_VERDAD :=
 [*, *, condicion1]:	a	b	c	d	e	f	g	h	i	j :=
 			normal	0	0	0	0	1	0	0	0	0	0
-			negada	0	0	0	0	0	1	0	0	0	0
+			negada	0	0	0	0	0	1	1	0	0	0
 			
 [*, *, condicion2]:	a	b	c	d	e	f	g	h	i	j :=
 			normal	0	0	1	0	0	0	0	0	0	0
