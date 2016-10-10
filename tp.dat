@@ -1,4 +1,7 @@
 data;
 
 set BINARIAS := a b c d e f g h i j;
-set CONDICIONES := condicion1;
+set CONDICIONES := a b c d e f g h i j notA notB notC notD notE notF notG notH notI notJ :=
+condicion1		   0 0 0 0 1 0 0 0 0 0 0	0	 0	  0	   0	1	 1	  0	   0	0
+condicion2		   0 0 1 0 0 0 0 0 0 0 0	1	 0	  0	   0 	0	 1	  0	   0	0
+condicion2		   1 1 0 0 0 0 0 0 0 0 0	0	 0	  0	   0	0	 0	  0	   1	0;
