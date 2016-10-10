@@ -1,0 +1,40 @@
+data;
+
+set BINARIAS := a b c d e f g h i j;
+set TIPO := normal negada;
+set CONDICIONES := condicion1, condicion2, condicion3, condicion4, condicion5, condicion6, condicion7, condicion8;
+
+param TABLA_VERDAD :=
+[*, *, condicion1]:	a	b	c	d	e	f	g	h	i	j :=
+			normal	0	0	0	0	1	0	0	0	0	0
+			negada	0	0	0	0	0	1	0	0	0	0
+			
+[*, *, condicion2]:	a	b	c	d	e	f	g	h	i	j :=
+			normal	0	0	1	0	0	0	0	0	0	0
+			negada	0	1	0	0	0	0	1	0	0	0
+			
+[*, *, condicion3]:	a	b	c	d	e	f	g	h	i	j :=
+			normal	1	1	0	0	0	0	0	0	0	0
+			negada	0	0	0	0	0	0	0	0	1	0
+			
+[*, *, condicion4]:	a	b	c	d	e	f	g	h	i	j :=
+			normal	0	0	0	1	0	1	0	0	0	0
+			negada	1	0	0	0	0	0	0	0	0	0
+
+[*, *, condicion5]:	a	b	c	d	e	f	g	h	i	j :=
+			normal	0	0	0	1	0	0	1	0	0	0
+			negada	0	0	0	1	0	0	0	0	0	0
+			
+[*, *, condicion6]:	a	b	c	d	e	f	g	h	i	j :=
+			normal	0	0	0	0	1	0	0	0	0	0
+			negada	1	0	0	0	0	1	0	0	0	0
+			
+[*, *, condicion7]:	a	b	c	d	e	f	g	h	i	j :=
+			normal	0	1	0	0	0	0	1	1	0	0
+			negada	0	0	0	0	0	0	0	0	0	0
+			
+[*, *, condicion8]:	a	b	c	d	e	f	g	h	i	j :=
+			normal	0	0	0	0	0	0	0	0	1	0
+			negada	0	0	0	1	0	0	0	0	1	0;
+			
+end;
