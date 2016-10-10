@@ -2,7 +2,7 @@ data;
 
 set BINARIAS := a b c d e f g h i j;
 set TIPO := normal negada;
-set CONDICIONES := condicion1, condicion2, condicion3, condicion4, condicion5, condicion6, condicion7, condicion8;
+set CONDICIONES := condicion1 condicion2 condicion3 condicion4 condicion5 condicion6 condicion7 condicion8 condicion9 condicion10 condicion11 condicion12 condicion13 condicion14 condicion15 condicion16 condicion17 condicion18 condicion19 condicion20 condicion21 condicion22 condicion23 condicion24 condicion25 condicion26 condicion27 condicion28 condicion29 condicion30 condicion31 condicion32 condicion33 condicion34 condicion35 condicion36 condicion37;
 
 param TABLA_VERDAD :=
 [*, *, condicion1]:	a	b	c	d	e	f	g	h	i	j :=
@@ -35,6 +35,122 @@ param TABLA_VERDAD :=
 			
 [*, *, condicion8]:	a	b	c	d	e	f	g	h	i	j :=
 			normal	0	0	0	0	0	0	0	0	1	0
-			negada	0	0	0	1	0	0	0	0	1	0;
+			negada	0	0	0	1	0	0	0	0	1	0
+			
+[*, *, condicion9]:	a	b	c	d	e	f	g	h	i	j :=
+			normal	0	0	0	0	0	0	0	0	0	0
+			negada	1	0	0	0	0	0	0	0	1	1
+
+[*, *, condicion10]:	a	b	c	d	e	f	g	h	i	j :=
+			normal		0	0	0	0	1	0	0	0	0	0
+			negada		0	0	1	0	0	1	0	0	0	0
+
+[*, *, condicion11]:	a	b	c	d	e	f	g	h	i	j :=
+			normal		0	0	1	0	0	0	0	0	0	1
+			negada		0	0	0	0	0	0	0	0	0	1
+			
+[*, *, condicion12]:	a	b	c	d	e	f	g	h	i	j :=
+			normal		0	0	0	1	1	0	0	0	0	0
+			negada		0	0	0	0	1	0	0	0	0	0
+			
+[*, *, condicion13]:	a	b	c	d	e	f	g	h	i	j :=
+			normal		0	0	0	0	0	0	0	0	1	0
+			negada		0	0	0	0	1	0	0	1	0	0
+			
+[*, *, condicion14]:	a	b	c	d	e	f	g	h	i	j :=
+			normal		0	0	0	0	1	0	1	0	0	1
+			negada		0	0	0	0	0	0	0	0	0	0
+			
+[*, *, condicion15]:	a	b	c	d	e	f	g	h	i	j :=
+			normal		1	0	0	0	0	0	0	0	1	0
+			negada		1	0	0	0	0	0	0	0	0	0
+			
+[*, *, condicion16]:	a	b	c	d	e	f	g	h	i	j :=
+			normal		0	0	1	0	0	1	0	0	0	0
+			negada		0	0	0	1	0	0	0	0	0	0
+			
+[*, *, condicion17]:	a	b	c	d	e	f	g	h	i	j :=
+			normal		0	0	0	1	0	1	1	0	0	0
+			negada		0	0	0	0	0	0	0	0	0	0
+			
+[*, *, condicion18]:	a	b	c	d	e	f	g	h	i	j :=
+			normal		0	0	0	1	1	0	0	0	0	0
+			negada		0	0	0	0	0	0	0	0	1	0
+			
+[*, *, condicion19]:	a	b	c	d	e	f	g	h	i	j :=
+			normal		0	0	1	0	0	0	1	0	0	0
+			negada		0	0	0	0	0	1	0	0	0	0
+			
+[*, *, condicion20]:	a	b	c	d	e	f	g	h	i	j :=
+			normal		1	0	1	0	0	0	0	0	0	1
+			negada		0	0	0	0	0	0	0	0	0	0
+			
+[*, *, condicion21]:	a	b	c	d	e	f	g	h	i	j :=
+			normal		0	0	0	1	0	0	1	0	1	0
+			negada		0	0	0	0	0	0	0	0	0	0
+			
+[*, *, condicion22]:	a	b	c	d	e	f	g	h	i	j :=
+			normal		0	0	0	1	1	0	0	0	0	0
+			negada		0	0	0	1	0	0	0	0	0	0
+			
+[*, *, condicion23]:	a	b	c	d	e	f	g	h	i	j :=
+			normal		0	0	0	0	0	1	0	0	0	0
+			negada		0	0	0	0	0	1	0	0	0	1
+			
+[*, *, condicion24]:	a	b	c	d	e	f	g	h	i	j :=
+			normal		0	0	0	0	0	1	0	1	0	0
+			negada		0	0	0	0	0	0	0	0	0	0
+			
+[*, *, condicion25]:	a	b	c	d	e	f	g	h	i	j :=
+			normal		0	0	1	0	0	1	0	0	0	1
+			negada		0	0	0	0	0	0	0	0	0	0
+			
+[*, *, condicion26]:	a	b	c	d	e	f	g	h	i	j :=
+			normal		0	0	0	0	0	0	1	0	0	0
+			negada		0	1	0	0	0	0	0	0	0	0
+			
+[*, *, condicion27]:	a	b	c	d	e	f	g	h	i	j :=
+			normal		1	0	0	0	0	1	0	0	0	0
+			negada		0	0	0	0	0	0	0	0	0	1
+			
+[*, *, condicion28]:	a	b	c	d	e	f	g	h	i	j :=
+			normal		0	0	0	0	0	1	1	0	0	0
+			negada		0	0	0	0	0	0	1	0	0	0
+			
+[*, *, condicion29]:	a	b	c	d	e	f	g	h	i	j :=
+			normal		0	0	0	0	1	1	1	0	0	0
+			negada		0	0	0	0	0	0	0	0	0	0
+			
+[*, *, condicion30]:	a	b	c	d	e	f	g	h	i	j :=
+			normal		0	0	0	1	0	0	0	0	1	0
+			negada		0	0	0	1	0	0	0	0	0	0
+			
+[*, *, condicion31]:	a	b	c	d	e	f	g	h	i	j :=
+			normal		0	0	0	0	0	0	1	0	0	0
+			negada		0	0	0	0	1	0	0	1	0	0
+			
+[*, *, condicion32]:	a	b	c	d	e	f	g	h	i	j :=
+			normal		0	0	0	0	1	0	0	0	1	0
+			negada		0	0	0	0	0	0	0	0	1	0
+			
+[*, *, condicion33]:	a	b	c	d	e	f	g	h	i	j :=
+			normal		0	0	0	0	0	0	0	0	1	0
+			negada		0	0	0	1	0	0	1	0	0	0
+			
+[*, *, condicion34]:	a	b	c	d	e	f	g	h	i	j :=
+			normal		1	0	0	0	0	0	1	0	0	0
+			negada		0	0	0	0	1	0	0	0	0	0
+			
+[*, *, condicion35]:	a	b	c	d	e	f	g	h	i	j :=
+			normal		0	0	0	1	0	0	0	0	1	0
+			negada		0	0	0	0	0	0	0	1	0	0
+			
+[*, *, condicion36]:	a	b	c	d	e	f	g	h	i	j :=
+			normal		0	0	0	1	1	0	0	0	0	0
+			negada		0	1	0	0	0	0	0	0	0	0
+			
+[*, *, condicion37]:	a	b	c	d	e	f	g	h	i	j :=
+			normal		0	0	0	0	1	0	0	0	0	0
+			negada		0	0	0	1	0	0	1	0	0	0;
 			
 end;
