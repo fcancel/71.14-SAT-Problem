@@ -1,11 +1,31 @@
 data;
 
 set BINARIAS := a b c d e f g h i j notA notB notC notD notE notF notG notH notI notJ;
-set CONDICIONES := condicion1 condicion2 condicion3;
+set RELACIONES := relA relB relC relD relE relF relG relH relI relJ;
+set CONDICIONES := condicion1 condicion2 condicion3 condicion4 condicion5 condicion6 condicion7 condicion8;
 
 param TABLA_VERDAD : a b c d e f g h i j notA notB notC notD notE notF notG notH notI notJ :=
-condicion1		      0 0 0 0 1 0 0 0 0 0 0		0	 0	  0	   0	1	 1	  0	   0	0
+condicion1		     0 0 0 0 1 0 0 0 0 0 0	   0	 0	  0	   0	1	 1	  0	   0	0
 condicion2		   0 0 1 0 0 0 0 0 0 0 0	1	 0	  0	   0 	0	 1	  0	   0	0
-condicion3 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0;
+condicion3 1 1 0 0 0 0 0 0 0 0           0 0 0 0 0 0 0 0 1 0
+condicion4		     0 0 0 1 0 1 0 0 0 0 1	   0	 0	  0	   0	0	 0	  0	   0	0
+condicion5		     0 0 0 1 0 0 1 0 0 0 0	   0	 0	  1	   0	0	 0	  0	   0	0
+condicion6 		     0 0 0 0 1 0 0 0 0 0 1	   0	 0	  0	   0	1	 0	  0	   0	0
+condicion7		     0 1 0 0 0 0 1 1 0 0 0	   0	 0	  0	   0	0	 0	  0	   0	0
+condicion8		     0 0 0 0 0 0 0 0 1 0 0	   0	 0	  1	   0	0	 0	  0	   1	0;
+
+
+param TABLA_RELACION_NEGADA : a b c d e f g h i j notA notB notC notD notE notF notG notH notI notJ :=
+relA 						  1 0 0 0 0 0 0 0 0 0 1     0    0    0     0   0    0    0    0    0
+relB 						  0 1 0 0 0 0 0 0 0 0 0     1    0    0     0   0    0    0    0    0
+relC 						  0 0 1 0 0 0 0 0 0 0 0     0    1    0     0   0    0    0    0    0
+relD 						  0 0 0 1 0 0 0 0 0 0 0     0    0    1     0   0    0    0    0    0
+relE 						  0 0 0 0 1 0 0 0 0 0 0     0    0    0     1   0    0    0    0    0
+relF 						  0 0 0 0 0 1 0 0 0 0 0     0    0    0     0   1    0    0    0    0
+relG 						  0 0 0 0 0 0 1 0 0 0 0     0    0    0     0   0    1    0    0    0
+relH 						  0 0 0 0 0 0 0 1 0 0 0     0    0    0     0   0    0    1    0    0
+relI 						  0 0 0 0 0 0 0 0 1 0 0     0    0    0     0   0    0    0    1    0
+relJ						  0 0 0 0 0 0 0 0 0 1 0     0    0    0     0   0    0    0    0    1;
+
 
 end;
