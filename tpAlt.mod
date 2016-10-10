@@ -13,8 +13,7 @@ var binariasTodas{tipo in TIPO, binaria in BINARIAS} binary >= 0;
 maximize z: sum{condicion in CONDICIONES} condicionesACumplir[condicion];
 
 /*restricciones del problema*/
-s.t. debenSerCiertas{condicion in CONDICIONES}: condicionesACumplir[condicion] = 1;
-s.t. condicionesOrLadoIzquierdo{condicion in CONDICIONES}: sum{tipo in TIPO, binaria in BINARIAS} TABLA_VERDAD[tipo, binaria, condicion] * binariasTodas[tipo, binaria] >= condicionesACumplir[condicion];
+s.t. condicionesOrLadoIzquierdo{condicion in CONDICIONES}: condicionesACumplir[condicion] <= sum{tipo in TIPO, binaria in BINARIAS} TABLA_VERDAD[tipo, binaria, condicion] * binariasTodas[tipo, binaria];
 
 s.t. condicionesOrLadoDerecho{condicion in CONDICIONES}: sum{tipo in TIPO, binaria in BINARIAS} TABLA_VERDAD[tipo, binaria, condicion] * binariasTodas[tipo, binaria] <= (sum{tipo in TIPO, binaria in BINARIAS} TABLA_VERDAD[tipo, binaria, condicion]) * condicionesACumplir[condicion];
 
