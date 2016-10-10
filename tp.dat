@@ -6,14 +6,42 @@ set CONDICIONES := condicion1 condicion2 condicion3 condicion4 condicion5 condic
 
 param TABLA_VERDAD : a b c d e f g h i j notA notB notC notD notE notF notG notH notI notJ :=
 condicion1		     0 0 0 0 1 0 0 0 0 0 0	   0	 0	  0	   0	1	 1	  0	   0	0
-condicion2		   0 0 1 0 0 0 0 0 0 0 0	1	 0	  0	   0 	0	 1	  0	   0	0
-condicion3 1 1 0 0 0 0 0 0 0 0           0 0 0 0 0 0 0 0 1 0
+condicion2		     0 0 1 0 0 0 0 0 0 0 0	   1	 0	  0	   0 	0	 1	  0	   0	0
+condicion3 			 1 1 0 0 0 0 0 0 0 0 0 	   0 	 0 	  0	   0 	0 	 0 	  0    1	0
 condicion4		     0 0 0 1 0 1 0 0 0 0 1	   0	 0	  0	   0	0	 0	  0	   0	0
 condicion5		     0 0 0 1 0 0 1 0 0 0 0	   0	 0	  1	   0	0	 0	  0	   0	0
 condicion6 		     0 0 0 0 1 0 0 0 0 0 1	   0	 0	  0	   0	1	 0	  0	   0	0
 condicion7		     0 1 0 0 0 0 1 1 0 0 0	   0	 0	  0	   0	0	 0	  0	   0	0
-condicion8		     0 0 0 0 0 0 0 0 1 0 0	   0	 0	  1	   0	0	 0	  0	   1	0;
-
+condicion8		     0 0 0 0 0 0 0 0 1 0 0	   0	 0	  1	   0	0	 0	  0	   1	0
+condicion9 			 0 0 0 0 0 0 0 0 0 0 0 	   1	 0	  0	   0 	0 	 0	  0	   1	1
+condicion10			 0 0 0 0 0 1 0 0 0 0 0 	   0	 1	  0	   0	1	 0	  0	   0 	0
+condicion11			 0 0 1 0 0 0 0 0 0 1 0	   0	 0	  0	   0	0	 0	  0	   0	1
+condicion12 		 0 0 0 1 1 0 0 0 0 0 0	   0 	 0	  0	   1	0	 0	  0	   0 	0
+condicion13 		 0 0 0 0 0 0 0 0 1 0 0	   0	 0	  0	   1	0	 0	  1	   0	0	
+condicion14 		 0 0 0 0 1 0 1 0 0 1 0	   0	 0	  0	   0	0	 0	  0	   0	0
+condicion15 		 1 0 0 0 0 0 0 0 1 0 1	   0	 0	  0	   0	0	 0	  0	   0	0
+condicion16 		 0 0 1 0 0 1 0 0 0 0 0	   0	 0	  1	   0	0	 0	  0	   0	0
+condicion17 		 0 0 0 1 0 1 1 0 0 0 0	   0 	 0	  0	   0	0	 0	  0	   0	0
+condicion18 		 0 0 0 1 1 0 0 0 0 0 0 	   0	 0	  0	   0	0	 0	  0	   1	0
+condicion19 		 0 0 1 0 0 0 1 0 0 0 0 	   0	 0	  0	   0	1	 0	  0	   0	0
+condicion20 		 1 0 1 0 0 0 0 0 0 1 0	   0	 0	  0	   0	0	 0	  0	   0	0
+condicion21 		 0 0 0 1 0 0 1 0 1 0 0	   0	 0	  0	   0	0	 0	  0	   0	0
+condicion22 		 0 0 0 1 1 0 0 0 0 0 0	   0	 0	  1	   0	0	 0	  0	   0	0
+condicion23 		 0 0 0 0 0 1 0 0 0 0 0	   0	 0	  0	   0	1	 0	  0	   0	1
+condicion24			 0 0 0 0 0 1 0 1 0 0 0	   0 	 0	  0	   0	0	 0	  0	   0	0
+condicion25 		 0 0 1 0 0 1 0 0 0 1 0	   0 	 0	  0	   0	0	 0	  0	   0	0
+condicion26 		 0 0 0 0 0 0 1 0 0 0 0	   1 	 0	  0	   0	0	 0	  0	   0	0
+condicion27 		 1 0 0 0 0 1 0 0 0 0 0 	   0 	 0	  0	   0	0	 0	  0	   0	1
+condicion28 		 0 0 0 0 0 1 1 0 0 0 0	   0	 0	  0	   0	0	 1	  0	   0	0
+condicion29 		 0 0 0 0 1 1 1 0 0 0 0	   0	 0	  0	   0	0	 0	  0	   0	0
+condicion30 		 0 0 0 1 0 0 0 0 1 0 0	   0	 0	  1	   0	0	 0	  0	   0	0
+condicion31 		 0 0 0 0 0 0 1 0 0 0 0	   0	 0	  0	   1	0	 0	  1	   0	0
+condicion32 		 0 0 0 0 1 0 0 0 1 0 0	   0 	 0	  0	   0	0	 0	  0	   1	0
+condicion33 		 0 0 0 0 0 0 0 0 1 0 0	   0	 0	  1	   0	0	 1	  0	   0	0
+condicion34 		 1 0 0 0 0 0 1 0 0 0 0	   0	 0	  0	   1	0	 0	  0	   0	0
+condicion35 		 0 0 0 1 0 0 0 0 1 0 0	   0	 0	  0	   0	0	 0	  1	   0	0
+condicion36 		 0 0 0 1 1 0 0 0 0 0 0	   1	 0	  0	   0	0	 0	  0	   0	0
+condicion37 		 0 0 0 0 1 0 0 0 0 0 0	   0	 0	  1	   0	0	 1	  0	   0	0 	 
 
 param TABLA_RELACION_NEGADA : a b c d e f g h i j notA notB notC notD notE notF notG notH notI notJ :=
 relA 						  1 0 0 0 0 0 0 0 0 0 1     0    0    0     0   0    0    0    0    0
